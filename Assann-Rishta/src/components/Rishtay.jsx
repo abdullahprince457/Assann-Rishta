@@ -91,4 +91,4 @@ const Rishtay = () => {
   )
 }
 
-export default Rishtay
+export default Rishtay 
