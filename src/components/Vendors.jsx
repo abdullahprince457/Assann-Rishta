@@ -33,7 +33,7 @@ const Vendors = () => {
       <Navbar />
 
       <div className="max-w-7xl mx-auto">
-        
+
         <div className="px-6 lg:px-16 pt-6 pb-2">
           <p className="text-sm text-gray-500">
             <Link to="/home" className="hover:text-pink-600 transition-colors">Home</Link>
@@ -47,13 +47,14 @@ const Vendors = () => {
         </div>
 
         <div className="px-6 lg:px-16 pb-16">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
+          
+          <div className="flex flex-wrap justify-center gap-8">
 
             {vendorCategories.map((vendor) => (
               <Link
                 key={vendor.name}
                 to={vendor.link}
-                className="block w-[380px] h-[336px] bg-white shadow-md  overflow-hidden 
+                className="block w-[380px] sm:w-[340px] xs:w-full max-w-[380px] h-[336px] bg-white shadow-md overflow-hidden 
                            hover:shadow-xl hover:scale-[1.02] transition-all duration-300 group"
               >
 
@@ -75,6 +76,7 @@ const Vendors = () => {
             ))}
 
           </div>
+
         </div>
       </div>
 
