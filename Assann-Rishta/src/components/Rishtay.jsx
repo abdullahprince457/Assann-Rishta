@@ -33,7 +33,9 @@ const Rishtay = () => {
         </div>
         <div>
           <div>
-            
+            <div>
+              
+            </div>
           </div>
         </div>
           
