@@ -31,7 +31,10 @@ const Rishtay = () => {
             Search
           </button>
         </div>
-
+        <div>
+          
+        </div>
+          
         <button
           className='md:hidden bg-[#e72d65] text-white font-bold px-6 py-2 rounded-md w-fit'
           onClick={() => setShowFilter(!showFilter)}
