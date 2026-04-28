@@ -1,12 +1,13 @@
 import React, { useState } from 'react'
 import logo from '../assets/logo.PNG'
 import { Link } from 'react-router-dom'
+import { HiOutlineMenu, HiX } from "react-icons/hi"
 
 const Navbar = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false)
 
   const linkClass =
-    'text-gray-700 hover:text-pink-400 transition-ease-in-out hover:underline hover:underline-offset-4 duration-400'
+    'text-gray-700 hover:text-pink-400 transition ease-in-out hover:underline hover:underline-offset-4 duration-300'
 
   return (
     <div className="flex justify-between items-center p-4 shadow-md">
@@ -15,7 +16,6 @@ const Navbar = () => {
         <img src={logo} alt="logo" className="w-[150px]" />
       </div>
 
-      {/* Desktop Menu */}
       <div className="hidden lg:flex gap-8">
         <Link to="/home" className={linkClass}>Home</Link>
         <Link to="/AboutUS" className={linkClass}>AboutUs</Link>
@@ -27,10 +27,10 @@ const Navbar = () => {
       </div>
 
       <button
-        className="text-2xl lg:hidden"
+        className="text-3xl lg:hidden"
         onClick={() => setSidebarOpen(true)}
       >
-        <i className="bi bi-list"></i>
+        <HiOutlineMenu />
       </button>
 
       {sidebarOpen && (
@@ -40,7 +40,6 @@ const Navbar = () => {
         />
       )}
 
-      {/* Mobile Sidebar */}
       <div
         className={`fixed top-0 left-0 h-full w-64 bg-white p-6 transition-transform duration-300 lg:hidden ${
           sidebarOpen ? 'translate-x-0' : '-translate-x-full'
@@ -48,7 +47,7 @@ const Navbar = () => {
       >
         <div className="flex justify-end mb-8">
           <button onClick={() => setSidebarOpen(false)} className="text-2xl">
-            <i className="bi bi-x-lg"></i>
+            <HiX />
           </button>
         </div>
 

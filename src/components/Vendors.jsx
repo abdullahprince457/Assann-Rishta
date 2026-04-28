@@ -32,9 +32,9 @@ const Vendors = () => {
       <Top />
       <Navbar />
 
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-7xl mx-auto px-6 lg:px-16">
 
-        <div className="px-6 lg:px-16 pt-6 pb-2">
+        <div className="pt-6 pb-2">
           <p className="text-sm text-gray-500">
             <Link to="/home" className="hover:text-pink-600 transition-colors">Home</Link>
             <span className="mx-2">/</span>
@@ -42,13 +42,9 @@ const Vendors = () => {
           </p>
         </div>
 
-        <div className="px-6 lg:px-16 pt-4 pb-8">
-          <h1 className="text-3xl font-bold text-gray-900">Our Vendors</h1>
-        </div>
+        <div className="pb-16 mt-10">
 
-        <div className="px-6 lg:px-16 pb-16">
-          
-          <div className="flex flex-wrap justify-center gap-8">
+          <div className="flex flex-wrap justify-center lg:justify-start gap-y-10 gap-x-8 lg:gap-x-12">
 
             {vendorCategories.map((vendor) => (
               <Link
@@ -57,7 +53,6 @@ const Vendors = () => {
                 className="block w-[380px] sm:w-[340px] xs:w-full max-w-[380px] h-[336px] bg-white shadow-md overflow-hidden 
                            hover:shadow-xl hover:scale-[1.02] transition-all duration-300 group"
               >
-
                 <div className="w-full h-[280px] overflow-hidden cursor-pointer">
                   <img
                     src={vendor.image}
@@ -71,13 +66,13 @@ const Vendors = () => {
                     {vendor.name}
                   </h2>
                 </div>
-
               </Link>
             ))}
 
           </div>
 
         </div>
+
       </div>
 
       <Footer />

@@ -8,7 +8,6 @@ const Rishtay = () => {
   return (
     <div className="mt-20 flex flex-col mr-auto gap-5 mx-4 md:mx-10">
 
-      {/* Search Row */}
       <div className="flex gap-2 justify-end">
         <input
           className="rounded-md p-2 border border-[#e72d65]"
@@ -20,7 +19,6 @@ const Rishtay = () => {
         </button>
       </div>
 
-      {/* Filter Toggle Button */}
       <button
         className='md:hidden bg-[#e72d65] text-white font-bold px-6 py-2 rounded-md w-fit'
         onClick={() => setShowFilter(!showFilter)}>
@@ -29,7 +27,6 @@ const Rishtay = () => {
  <div>
   <data value=""></data>
  </div>
-      {/* Filter Form */}
       <div className={`${showFilter ? "grid" : "hidden"} md:grid text-[#e72d65] grid-cols-1 gap-4 w-full py-5 px-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 shadow-[0_3px_5px_rgba(0,0,0,0.08),_-3px_0_5px_rgba(0,0,0,0.08),_3px_0_5px_rgba(0,0,0,0.08)]`}>
         <select className="outline-none border-b-2 w-full py-2">
           <option>Caste</option>
@@ -83,7 +80,6 @@ const Rishtay = () => {
           </button>
         </div>
 
-        {/* baqi cards same hi rakhe */}
         
       </div>
 
