@@ -19,7 +19,7 @@ const Rishtay = () => {
         </p>
       </div>
 
-      <div className="mt-20 flex flex-col mr-auto gap-5 mx-15">
+      <div className="mt-20 flex flex-col   gap-5 mx-20 p-10">
 
         <div className="flex gap-2 justify-end">
           <input
@@ -31,20 +31,15 @@ const Rishtay = () => {
             Search
           </button>
         </div>
-        <div>
-          <div>
-            
-          </div>
-        </div>
-          
+
         <button
           className='md:hidden bg-[#e72d65] text-white font-bold px-6 py-2 rounded-md w-fit'
           onClick={() => setShowFilter(!showFilter)}
         >
-          {showFilter ? "Hide Filters" : "Show Filters"}
+          {showFilter ? "Hide" : "Show Filters"}
         </button>
 
-        <div className={`${showFilter ? "grid" : "hidden"} md:grid text-[#e72d65] grid-cols-1 gap-4 w-full py-5 px-15 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 shadow-[0_3px_5px_rgba(0,0,0,0.08),_-3px_0_5px_rgba(0,0,0,0.08),_3px_0_5px_rgba(0,0,0,0.08)]`}>
+        <div className={`${showFilter ? "grid" : "hidden"} md:grid text-[#e72d65] grid-cols-1 gap-4 w-full py-10 px-15   sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 shadow-[0_3px_5px_rgba(0,0,0,0.08),_-3px_0_5px_rgba(0,0,0,0.08),_3px_0_5px_rgba(0,0,0,0.08)]`}>
           <select className="outline-none border-b-2 w-full py-2"><option>Caste</option></select>
           <select className="outline-none border-b-2 w-full py-2"><option>Age From</option></select>
           <select className="outline-none border-b-2 w-full py-2"><option>Age To</option></select>
@@ -96,4 +91,4 @@ const Rishtay = () => {
   )
 }
 
-export default Rishtay 
+export default Rishtay

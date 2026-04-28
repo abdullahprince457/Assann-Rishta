@@ -18,12 +18,12 @@ const Navbar = () => {
       {/* Desktop Menu */}
       <div className="hidden lg:flex gap-8">
         <Link to="/home" className={linkClass}>Home</Link>
-        <Link to="/about" className={linkClass}>About Us</Link>
+        <Link to="/AboutUS" className={linkClass}>AboutUs</Link>
         <Link to="/rishtay" className={linkClass}>Rishtay</Link>
-        <Link to="/featured" className={linkClass}>Featured Rishtay</Link>
+        <Link to="/f_rishtay" className={linkClass}>Featured Rishtay</Link>
         <Link to="/pricing" className={linkClass}>Pricing</Link>
         <Link to="/vendors" className={linkClass}>Vendors</Link>
-        <Link to="/contact" className={linkClass}>Contact Us</Link>
+        <Link to="/ContactUs" className={linkClass}>Contact Us</Link>
       </div>
 
       <button
@@ -54,7 +54,7 @@ const Navbar = () => {
 
         <div className="flex flex-col gap-6">
           <Link to="/home" onClick={() => setSidebarOpen(false)} className={linkClass}>Home</Link>
-          <Link to="/about" onClick={() => setSidebarOpen(false)} className={linkClass}>About Us</Link>
+          <Link to="/AboutUS" onClick={() => setSidebarOpen(false)} className={linkClass}>About Us</Link>
           <Link to="/rishtay" onClick={() => setSidebarOpen(false)} className={linkClass}>Rishtay</Link>
           <Link to="/featured" onClick={() => setSidebarOpen(false)} className={linkClass}>Featured Rishtay</Link>
           <Link to="/pricing" onClick={() => setSidebarOpen(false)} className={linkClass}>Pricing</Link>
