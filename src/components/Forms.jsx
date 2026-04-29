@@ -65,7 +65,7 @@ const Forms = () => {
     if (!validate()) return
 
     console.log('Form submitted:', form)
-    toast.success('Registration submitted successfully 🎉')
+    toast.success('Registration submitted successfully')
   }
 
   const inputClass =
