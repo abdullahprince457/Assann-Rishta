@@ -23,7 +23,7 @@ const Navbar = () => {
         <Link to="/f_rishtay" className={linkClass}>Featured Rishtay</Link>
         <Link to="/pricing" className={linkClass}>Pricing</Link>
         <Link to="/vendors" className={linkClass}>Vendors</Link>
-        <Link to="/contact" className={linkClass}>Contact Us</Link>
+        <Link to="/contactUS" className={linkClass}>Contact Us</Link>
       </div>
 
       <button

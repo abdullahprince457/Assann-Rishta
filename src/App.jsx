@@ -8,6 +8,7 @@ import Rishtay from "./components/Rishtay";
 import AboutUS from "./components/AboutUS";
 import F_rishtay from "./components/F_rishtay";
 import ContactUs from "./components/ContactUs"
+import Vendors from "./components/Vendors";
 
 function App() {
   return (
@@ -21,7 +22,8 @@ function App() {
       <Route path="/pricing" element={<Pricing />} />
       <Route path="/rishtay" element={<Rishtay />} />
       <Route path="/f_rishtay" element={<F_rishtay />} />
-      <Route path="/contact" element={<ContactUs />} />
+      <Route path="/contactUs" element={<ContactUs />} />
+      <Route path="/vendors" element={<Vendors />} />
       <Route path="*" element={<h1>404 Not Found</h1>} />
     </Routes>
   );
