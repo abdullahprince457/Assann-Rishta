@@ -17,14 +17,15 @@ const ContactUs = () => {
             <div className=''>
             <h1 className='text-[#e72d65] text-3xl font-bold'>Get In Touch</h1>
             <p className=' pt-2'>We'll be glad to hear from you and our team is looking forward to help you in any way possible.</p>
-            </div>
-            <div className='mt-6 w-[500px] h-[300px] position-absolute '>
+            
+            <div className='mt-6 w-[700px] h-[460px]'>
               <iframe
                     src="https://www.google.com/maps?q=Rehmanpura%20Ichra%20Lahore&output=embed"
                     className="w-full h-full border-0"
                     allowFullScreen=""
                     loading="lazy"
                   ></iframe>
+            </div>
             </div>
             <div className='mr-64 pr-10 '>
                 <h1 className='text-[#e72d65] font-bold text-2xl '>Office Location</h1>
@@ -48,13 +49,6 @@ const ContactUs = () => {
                 <p>Mon - Sat: 9:00 AM - 6:00 PM</p>
                 <p>Sunday Closed</p>
                 <hr className='w-31 mt-2 mb-20' />
-
-
-                
-                
-
-
-
             </div>
         </div>
 <Footer/>
