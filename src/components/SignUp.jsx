@@ -8,8 +8,6 @@ import Icon from '../assets/Icon.png'
 const signUp = () => {
   return (
     <div>
-      <Top />
-      <Navbar />
 
       <div className="px-4 sm:px-6 lg:px-55 mt-5">
         <p className="text-gray-600">
@@ -58,7 +56,6 @@ const signUp = () => {
         </div>
       </div>
 
-      <Footer />
     </div>
   )
 }

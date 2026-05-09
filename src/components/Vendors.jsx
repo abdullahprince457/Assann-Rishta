@@ -3,7 +3,6 @@ import { Link } from "react-router-dom"
 import Top from './Top'
 import Navbar from './Navbar'
 import Footer from './Footer'
-
 import venue from '../assets/venue.jpg'
 import photographer from '../assets/photographer.jpg'
 import caterers from '../assets/caterers.jpg'
@@ -28,54 +27,47 @@ const vendorCategories = [
 
 const Vendors = () => {
   return (
-    <div className="min-h-screen bg-gray-50">
-      <Top />
-      <Navbar />
+    <div className="bg-white">
+    
 
-      <div className="max-w-7xl mx-auto px-6 lg:px-16">
+      <div className="max-w-[1200px] mx-auto px-6 py-10">
 
-        <div className="pt-6 pb-2">
+        <div className="mb-8">
           <p className="text-sm text-gray-500">
-            <Link to="/home" className="hover:text-pink-600 transition-colors">Home</Link>
+            <Link to="/home" className="hover:text-[#e72d65] transition">Home</Link>
             <span className="mx-2">/</span>
             <span className="text-gray-800 font-medium">Vendors</span>
           </p>
         </div>
 
-        <div className="pb-16 mt-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 pb-16">
 
-          <div className="flex flex-wrap justify-center lg:justify-start gap-y-10 gap-x-8 lg:gap-x-12">
+          {vendorCategories.map((vendor) => (
+            <Link
+              key={vendor.name}
+              to={vendor.link}
+              className="block group bg-white shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100"
+            >
+              <div className="w-full h-[250px] overflow-hidden">
+                <img
+                  src={vendor.image}
+                  alt={vendor.name}
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+              </div>
 
-            {vendorCategories.map((vendor) => (
-              <Link
-                key={vendor.name}
-                to={vendor.link}
-                className="block w-[380px] sm:w-[340px] xs:w-full max-w-[380px] h-[336px] bg-white shadow-md overflow-hidden 
-                           hover:shadow-xl hover:scale-[1.02] transition-all duration-300 group"
-              >
-                <div className="w-full h-[280px] overflow-hidden cursor-pointer">
-                  <img
-                    src={vendor.image}
-                    alt={vendor.name}
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                  />
-                </div>
-
-                <div className="h-[56px] bg-gray-100 flex items-center justify-center">
-                  <h2 className="text-lg font-semibold text-gray-800 group-hover:text-pink-600 transition-colors">
-                    {vendor.name}
-                  </h2>
-                </div>
-              </Link>
-            ))}
-
-          </div>
+              <div className="h-[60px] flex items-center justify-center border-t border-gray-100">
+                <h2 className="text-lg font-semibold text-gray-800 group-hover:text-[#e72d65] transition-colors">
+                  {vendor.name}
+                </h2>
+              </div>
+            </Link>
+          ))}
 
         </div>
 
       </div>
 
-      <Footer />
     </div>
   )
 }

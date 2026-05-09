@@ -3,11 +3,11 @@ import Title from './Title'
 
 const Revolution = () => {
   return (
-    <div className="px-6 max-w-[1000px] mx-auto py-10">
+    <div className="max-w-[1200px] mx-auto px-6 py-10">
 
       <Title title="Revolution in Matrimonials" />
 
-      <div className="mt-6 space-y-5 text-gray-700 leading-snug">
+      <div className="mt-6 space-y-5 text-gray-700 leading-relaxed">
 
         <p className="whitespace-pre-line">
 {`The emergence of online shadi websites has made hunt for perfect rishtay tremendously wide throughout the world. Before their origination, parents typically search through for suitable rishta by consulting with marriage bureaus, marriage brokers, marriage consultants, and by putting zaroorat rishta advertisement in newspaper. But dreadfully it was limited to the region, due to the circulation of newspaper on daily basis.`}

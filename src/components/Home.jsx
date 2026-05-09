@@ -14,8 +14,6 @@ import Footer from './Footer'
 const Home = () => {
   return (
     <div>
-        <Top />
-        <Navbar />
         <ImgSec />
         <Gender />
         <Register />
@@ -24,7 +22,6 @@ const Home = () => {
         <Doc />
         <Working />
         <Revolution />
-        <Footer />
     </div>
   )
 }

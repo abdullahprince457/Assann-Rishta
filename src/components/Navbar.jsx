@@ -21,7 +21,7 @@ const Navbar = () => {
     'text-gray-700 hover:text-pink-400 transition ease-in-out hover:underline hover:underline-offset-4 duration-300'
 
   return (
-    <div className={`sticky top-0 z-50 flex justify-between items-center shadow-md bg-white transition-all duration-300 ${scrolled ? 'py-1 px-3' : 'p-4'}`}>
+    <div className={`sticky top-0 z-50 flex justify-between items-center shadow-md bg-white transition-all duration-300 ${scrolled ? 'py-[-10px] px-3' : 'p-4'}`}>
       
       <div>
         <img src={logo} alt="logo" className="w-[150px]" />
