@@ -8,13 +8,11 @@ const Working = () => {
   return (
     <div className='bg-[#FBFAFE] py-10 px-4 flex flex-col items-center'>
 
-      {/* Centered Title */}
       <Title
         title="How It Works"
         desc="Providing Special Services for our valued users. We implement your Plan according to Desires."
       />
 
-      {/* Centered Flex Container */}
       <div className='flex flex-col md:flex-row justify-center items-center md:items-stretch gap-10 lg:gap-28 pt-11 w-full max-w-screen-xl'>
 
         {/* User Card */}
