@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
-import toast, { Toaster } from 'react-hot-toast'
+// import toast, { Toaster } from 'react-hot-toast'
+import toast, {Toaster} from 'react-hot-toast'
 import Top from './Top'
 import Navbar from './Navbar'
 import Footer from './Footer'

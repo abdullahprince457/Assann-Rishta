@@ -27,19 +27,20 @@ const Rishtay = () => {
             type="text"
             placeholder="Search User By Id"
           />
-          <button className="bg-[#e72d65] text-white font-bold px-7 rounded-md">
+          <button className="bg-[#e72d65] text-white font-bold px-7 rounded-md ">
             Search
           </button>
         </div>
           
         <button
-          className='md:hidden bg-[#e72d65] text-white font-bold px-6 py-2 rounded-md w-fit'
+          className='md:hidden px-52 bg-[#e72d65] text-white font-bold px-6 py-2 rounded-md w-fit
+           '
           onClick={() => setShowFilter(!showFilter)}
         >
-          {showFilter ? "Hide" : "Show Filters"}
+          {showFilter ? "Hide" : "Filter Form"}
         </button>
 
-        <div className={`${showFilter ? "grid" : "hidden"} md:grid text-[#e72d65] grid-cols-1 gap-4 w-full py-10 px-15   sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 shadow-[0_3px_5px_rgba(0,0,0,0.08),_-3px_0_5px_rgba(0,0,0,0.08),_3px_0_5px_rgba(0,0,0,0.08)]`}>
+        <div className={`${showFilter ? "grid" : "hidden"} md:grid text-[#e72d65] grid-cols-1 gap-4 w-full py-20 px-10 mx-5   sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 shadow-[0_3px_5px_rgba(0,0,0,0.08),_-3px_0_5px_rgba(0,0,0,0.08),_3px_0_5px_rgba(0,0,0,0.08)]`}>
           <select className="outline-none border-b-2 w-full py-2"><option>Caste</option></select>
           <select className="outline-none border-b-2 w-full py-2"><option>Age From</option></select>
           <select className="outline-none border-b-2 w-full py-2"><option>Age To</option></select>
@@ -62,7 +63,7 @@ const Rishtay = () => {
         <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6'>
 
           {Array(6).fill().map((_, i) => (
-            <div key={i} className='h-full w-[280px] pb-10 shadow-[0_3px_5px_rgba(0,0,0,0.08),_-3px_0_5px_rgba(0,0,0,0.08),_3px_0_5px_rgba(0,0,0,0.08)] rounded-lg flex flex-col items-center text-center gap-2 mx-auto'>
+            <div key={i} className='h-full w-[250px] py-10 shadow-[0_3px_5px_rgba(0,0,0,0.08),_-3px_0_5px_rgba(0,0,0,0.08),_3px_0_5px_rgba(0,0,0,0.08)] rounded-lg flex flex-col items-center text-center gap-2 mx-auto'>
 
               <img className='mt-10 w-20 h-20 rounded-full object-cover'
                 src={vendor}
