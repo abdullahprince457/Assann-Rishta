@@ -7,8 +7,6 @@ import Footer from './Footer'
 const Pricing = () => {
   return (
     <div>
-      <Top />
-      <Navbar />
 
       <div className="px-6 lg:px-50 mt-4">
         <p className="text-sm text-gray-600">
@@ -79,7 +77,6 @@ const Pricing = () => {
 
       </div>
 
-      <Footer />
     </div>
   )
 }

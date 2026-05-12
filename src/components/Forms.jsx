@@ -74,8 +74,6 @@ const Forms = () => {
 
   return (
     <>
-    <Top />
-    <Navbar />
       <Toaster position="top-center" />
 
       <div className="max-w-3xl mx-auto my-10 px-4">
@@ -163,7 +161,6 @@ const Forms = () => {
           </form>
         </div>
       </div>
-      <Footer />
     </>
   )
 }

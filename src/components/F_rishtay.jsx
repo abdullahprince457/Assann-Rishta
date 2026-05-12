@@ -10,8 +10,8 @@ const F_Rishtay = () => {
 
   return (
     <div>
-      <Top />
-      <Navbar />
+      {/* <Top />
+      <Navbar /> */}
 
       <div className="px-6 lg:px-50 mt-4">
         <p className="text-sm text-gray-600">
